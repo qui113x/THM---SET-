@@ -44,10 +44,8 @@ AHA, there is a 'Search' field at the bottom where we can look for users:
 
 - Name: a
 -
--
 - Name		    	Phone		Email
 - Aaron Wheeler		9553310397	aaronwhe@windcorp.thm
--
 - Becky Welch	   	9491169020	beckywel@windcorp.thm
 - ...
 - snip 
@@ -255,10 +253,10 @@ More recon needed. Fire up gobuster and search for files with pretty common Wind
 Grab that file and see what it says:   https://set.windcorp.thm/appnotes.txt
 
 
-> Notes for the new user-module.
-> Send mail to user:
-> Welcome to Set!
-> Remember to change your default password at once. It is too common.`
+- Notes for the new user-module.
+- Send mail to user:
+- Welcome to Set!
+- Remember to change your default password at once. It is too common.`
 
 
 ##  THAT is KEY. 'Common' is a clue to use a list of common passwords. So, we should first try 'top-20-common-SSH-passwords.txt'
