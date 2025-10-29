@@ -117,9 +117,9 @@ IMPORTANT:  /assets/data/users.xml
 https://set.windcorp.thm/assets/data/users.xml
 
 
- Aaron Wheeler 9553310397 aaronwhe@windcorp.thm 
- Addison Russell 9425499327 addisonrus@windcorp.thm 
- Aiden Boyd 9755649273 aidenboy@windcorp.thm 
+ - Aaron Wheeler 9553310397 aaronwhe@windcorp.thm 
+ - Addison Russell 9425499327 addisonrus@windcorp.thm 
+ - Aiden Boyd 9755649273 aidenboy@windcorp.thm 
  Alice Peterson 9148366317 alicepet@windcorp.thm 
  Allison Neal 9828994495 allisonnea@windcorp.thm 
  Alyssa Baker 9163027451 alyssabak@windcorp.thm 
