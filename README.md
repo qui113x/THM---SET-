@@ -24,15 +24,15 @@ We have a    contact@windcorp.thm
 And possible users?
 
 
-Max Douglas				Chief Executive Officer
+`Max Douglas				Chief Executive Officer
 Marjorie Adams			Product Manager
 Nathaniel Martin		CTO
-Roberta Phillips		Accountant
+Roberta Phillips		Accountant`
 
-max.d
+`max.d
 marjorie.a
 nathaniel.m
-roberta.p
+roberta.p`
 
 
 ---
