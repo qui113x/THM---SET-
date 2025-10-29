@@ -1,4 +1,4 @@
-[metasploit-module.txt](https://github.com/user-attachments/files/23202307/metasploit-module.txt)###  TRYHACKME
+###  TRYHACKME
 
 ##   Set
 
