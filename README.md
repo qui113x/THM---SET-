@@ -255,10 +255,11 @@ More recon needed. Fire up gobuster and search for files with pretty common Wind
 Grab that file and see what it says:   https://set.windcorp.thm/appnotes.txt
 
 
-```Notes for the new user-module.
+`Notes for the new user-module.
 Send mail to user:
 Welcome to Set!
-Remember to change your default password at once. It is too common.```
+
+Remember to change your default password at once. It is too common.`
 
 
 ##  THAT is KEY. 'Common' is a clue to use a list of common passwords. So, we should first try 'top-20-common-SSH-passwords.txt'
