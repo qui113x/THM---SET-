@@ -1,4 +1,4 @@
-###  TRYHACKME
+[metasploit-module.txt](https://github.com/user-attachments/files/23202307/metasploit-module.txt)###  TRYHACKME
 
 ##   Set
 
@@ -467,8 +467,7 @@ Now, we can set up and use a modified METASPLOIT  VEEAM ONE AGENT exploit module
 This was actually fairly nasty to set up:  I will give the full code of my modified metasploit ruby file so I don't have to explain the small changes in detail. Save it as '/usr/share/metasploit-framework/modules/exploits/windows/misc/veeam_one_agent_deserialization_mod.rb'
 
 
-`
-class MetasploitModule < Msf::Exploit::Remote
+[Uploclass MetasploitModule < Msf::Exploit::Remote
 
   Rank = NormalRanking
 
@@ -679,8 +678,9 @@ class MetasploitModule < Msf::Exploit::Remote
     vprint_good("--> Handshake packet: #{pkt.inspect}")
     pkt
   end
-end
-`
+
+endading metasploit-module.txt…]()
+
 
 ---
 
